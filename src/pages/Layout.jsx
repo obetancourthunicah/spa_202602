@@ -6,16 +6,6 @@ const links = [
     text: "Home",
     to: "/home",
     classNames: []
-  },
-  {
-    text: "Sign In",
-    to: "/signin",
-    classNames: []
-  },
-  {
-    text: "Sign Up",
-    to: "/signup",
-    classNames: []
   }
 ];
 
