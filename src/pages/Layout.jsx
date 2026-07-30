@@ -6,6 +6,11 @@ const links = [
     text: "Home",
     to: "/home",
     classNames: []
+  },
+  {
+    text: "Pokemon",
+    to: "/pokemon",
+    classNames: []
   }
 ];
 

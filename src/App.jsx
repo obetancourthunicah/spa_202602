@@ -1,9 +1,9 @@
 import { Navigate, Route, Routes } from "react-router";
 import Layout from "./pages/Layout";
 import HomePage from "./pages/HomePage";
-import SignInPage from "./pages/SignInPage";
-import SignUpPage from "./pages/SignUpPage";
+import PokemonList from "./pages/PokemonList";
 import NotFoundPage from "./pages/NotFoundPage";
+import PrivateRoute from "./components/auth/PrivateRoute";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Route element={<Layout />}>
         <Route index element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<HomePage />} />
+        <Route path="/pokemon" element={<PrivateRoute><PokemonList /></PrivateRoute>} />
       </Route>
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
