@@ -199,3 +199,20 @@ img.card-header-img {
         @apply text-2xl;
     }
 }
+
+.pokemonPage {
+    @apply flex flex-col gap-4 p-4 min-h-0 h-full;
+}
+.pokemonPage .plList{
+    @apply flex-1 flex flex-row gap-4 flex-wrap;
+}
+
+.pokemonPage .plList .PokemonCard{
+    @apply p-5 border-2 rounded shadow bg-amber-400;
+}
+.pokemonPage .pActions {
+    @apply flex flex-row gap-4;
+}
+.pokemonPage .pActions button {
+    @apply p-5 rounded-xl bg-teal-400 border-teal-900 shadow;
+}
